@@ -21,12 +21,11 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-            brightness: Brightness.dark,
-            seedColor: const Color(0xFF3870FF)),
+            brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
       ),
       themeMode: ThemeMode.dark,
       routes: {
-        "login": (context) => LoginScreen(),
+        "login": (context) => const LoginScreen(),
       },
       initialRoute: "login",
     );
