@@ -7,10 +7,7 @@ class CircularIconButton extends StatelessWidget {
   final String semanticLabel;
 
   const CircularIconButton(
-      {super.key,
-      required this.imagePath,
-      required this.onTap,
-      required this.semanticLabel});
+      {super.key, required this.imagePath, required this.onTap, required this.semanticLabel});
 
   @override
   Widget build(BuildContext context) {

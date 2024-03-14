@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_big5workout/interface/screens/home_screen.dart';
 
 import 'interface/screens/login_screen.dart';
 
@@ -20,12 +21,13 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-            brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
+        colorScheme:
+            ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
       ),
       themeMode: ThemeMode.dark,
       routes: {
         "login": (context) => const LoginScreen(),
+        "home": (context) => HomeScreen(),
       },
       initialRoute: "login",
     );

@@ -8,6 +8,10 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    onLoginTap() {
+      Navigator.pushNamed(context, "home");
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xff1b1b1f),
       appBar: AppBar(
@@ -52,19 +56,25 @@ class LoginScreen extends StatelessWidget {
                             CircularIconButton(
                               semanticLabel: 'Twitter Login Button',
                               imagePath: 'assets/icons/twitter_icon.svg',
-                              onTap: () {},
+                              onTap: () {
+                                onLoginTap();
+                              },
                             ),
                             const SizedBox(width: 15.0),
                             CircularIconButton(
                               semanticLabel: 'Facebook Login Button',
                               imagePath: 'assets/icons/facebook_icon.svg',
-                              onTap: () {},
+                              onTap: () {
+                                onLoginTap();
+                              },
                             ),
                             const SizedBox(width: 15.0),
                             CircularIconButton(
                               semanticLabel: 'Google Login Button',
                               imagePath: 'assets/icons/google_icon.svg',
-                              onTap: () {},
+                              onTap: () {
+                                onLoginTap();
+                              },
                             ),
                           ],
                         ),
