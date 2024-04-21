@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_big5workout/interface/screens/home_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'interface/screens/login_screen.dart';
 
@@ -18,11 +19,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3870FF)),
+        textTheme: GoogleFonts.robotoTextTheme(
+          Theme.of(context).textTheme,
+        ),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme:
             ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
+        textTheme: GoogleFonts.robotoTextTheme(
+          Theme.of(context).textTheme,
+        ),
       ),
       themeMode: ThemeMode.dark,
       routes: {
