@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_big5workout/interface/screens/home_screen.dart';
-import 'package:flutter_big5workout/interface/screens/login_screen.dart';
+import 'package:flutter_big5workout/interface/screens/router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +8,7 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,
@@ -20,18 +19,13 @@ class App extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
-        colorScheme:
-            ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
+        colorScheme: ColorScheme.fromSeed(brightness: Brightness.dark, seedColor: const Color(0xFF3870FF)),
         textTheme: GoogleFonts.robotoTextTheme(
           Theme.of(context).textTheme,
         ),
       ),
       themeMode: ThemeMode.dark,
-      routes: {
-        "login": (context) => const LoginScreen(),
-        "home": (context) => HomeScreen(),
-      },
-      initialRoute: "login",
+      routerConfig: router,
     );
   }
 }
