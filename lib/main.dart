@@ -9,6 +9,6 @@ void main() {
 
   runApp(ChangeNotifierProvider(
     create: (context) => ApplicationState(),
-    builder: ((context, child) => const App()),
+    builder: ((context, child) => App()),
   ));
 }
