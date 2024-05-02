@@ -1,10 +1,10 @@
-import 'package:firebase_auth/firebase_auth.dart'
-    hide EmailAuthProvider, PhoneAuthProvider;
-import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
+import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_big5workout/interface/data/google-services.dart';
 
-import 'package:flutter_big5workout/firebase_options.dart';
+String getGoogleClientId() => googleServicesConfig["client"][0]["oauth_client"][0]["client_id"];
 
 class ApplicationState extends ChangeNotifier {
   ApplicationState() {
@@ -14,12 +14,10 @@ class ApplicationState extends ChangeNotifier {
   bool _loggedIn = false;
   bool get loggedIn => _loggedIn;
 
-  Future<void> init() async {
-    await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform);
-
+  void init() {
     FirebaseUIAuth.configureProviders([
       EmailAuthProvider(),
+      GoogleProvider(clientId: getGoogleClientId())
     ]);
 
     FirebaseAuth.instance.userChanges().listen((user) {
