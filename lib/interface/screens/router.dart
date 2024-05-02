@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 import 'package:firebase_ui_auth/firebase_ui_auth.dart' hide ProfileScreen;
 import 'package:flutter/material.dart';
 import 'package:flutter_big5workout/interface/screens/app/layout.dart';
@@ -16,11 +16,14 @@ final GlobalKey<NavigatorState> _shellNavigatorTrainingKey = GlobalKey<Navigator
 final GlobalKey<NavigatorState> _shellNavigatorStatisticKey = GlobalKey<NavigatorState>(debugLabel: "shellNavigatorStatistic");
 final GlobalKey<NavigatorState> _shellNavigatorProfileKey = GlobalKey<NavigatorState>(debugLabel: "shellNavigatorProfile");
 
-final auth = FirebaseAuth.instance;
+final auth = firebase_auth.FirebaseAuth.instance;
 
 final router = GoRouter(
   initialLocation: auth.currentUser == null ? '/' : '/training',
   navigatorKey: _rootNavigatorKey,
+  onException: (context, state, router){
+    context.goNamed("home");
+  },
   routes: [
     GoRoute(
       path: "/",
@@ -32,9 +35,11 @@ final router = GoRouter(
           name: "sign-in",
           redirect: (context, state) {
             if (auth.currentUser != null) return "/training";
+            return null;
           },
           builder: (context, state) {
             return SignInScreen(
+              oauthButtonVariant: OAuthButtonVariant.icon_and_text,
               actions: [
                 ForgotPasswordAction(((context, email) {
                   context.pushNamed("forgot-password", queryParameters: {'email': email});
