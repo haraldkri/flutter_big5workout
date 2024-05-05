@@ -15,11 +15,6 @@ class ApplicationState extends ChangeNotifier {
   bool get loggedIn => _loggedIn;
 
   void init() {
-    FirebaseUIAuth.configureProviders([
-      EmailAuthProvider(),
-      GoogleProvider(clientId: getGoogleClientId())
-    ]);
-
     FirebaseAuth.instance.userChanges().listen((user) {
       if (user != null) {
         _loggedIn = true;
