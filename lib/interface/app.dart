@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_big5workout/interface/app_state.dart';
 import 'package:flutter_big5workout/interface/screens/router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 class App extends StatelessWidget {
   App({super.key});
@@ -11,6 +13,8 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final isUserLoggedIn = Provider.of<ApplicationState>(context, listen: true).loggedIn;
+
     return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,7 +30,7 @@ class App extends StatelessWidget {
         ),
       ),
       themeMode: ThemeMode.dark,
-      routerConfig: router,
+      routerConfig: getRouter(isUserLoggedIn),
     );
   }
 }
