@@ -16,6 +16,7 @@ class AppLayout extends StatelessWidget {
         builder: (context, constraints) => Scaffold(
               body: navigationShell,
               bottomNavigationBar: BottomNavigationBar(
+                key:const Key("bottom-nav-bar"),
                 onTap: _goBranch,
                 currentIndex: navigationShell.currentIndex,
                 items: const [
