@@ -1,9 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_big5workout/interface/app_state.dart';
 import 'package:google_sign_in_mocks/google_sign_in_mocks.dart';
-import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider, PhoneAuthProvider;
-import 'package:flutter/material.dart';
 
 class MockApplicationState extends ChangeNotifier implements ApplicationState {
   MockApplicationState() {
@@ -32,8 +32,8 @@ class MockApplicationState extends ChangeNotifier implements ApplicationState {
       displayName: 'Bob Cool',
     );
     final auth = MockFirebaseAuth(mockUser: userConfig);
-    final result = await auth.signInWithCredential(credential);
-    final user = result.user!;
+    await auth.signInWithCredential(credential);
+    // final user = result.user!;
 
     auth.userChanges().listen((user) {
       if (user != null) {

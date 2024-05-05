@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../app_state.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
