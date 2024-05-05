@@ -8,10 +8,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    onLoginTap() {
-      context.pushNamed("sign-in");
-    }
-
     return Scaffold(
       backgroundColor: const Color(0xff1b1b1f),
       body: Container(
