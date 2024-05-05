@@ -35,7 +35,7 @@ jobs:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
           arch: x86_64
-          profile: pixel_7_pro
+          profile: Pixel 7 Pro
           script: flutter test integration_test
 # You can use flavors to run test, e.g. flutter test integration_test --dart-define=envFlavor=dev --flavor dev
 # Alternatively, if you're using a custom script to run tests, you can use:
