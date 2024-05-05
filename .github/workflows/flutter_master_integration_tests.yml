@@ -5,7 +5,7 @@ name: integration-test-my-app
 on:
   push:
     branches:
-      - pipeline-testing
+      - pipeline-debugging
 
 jobs:
   test:
@@ -13,10 +13,15 @@ jobs:
     strategy:
       matrix:
         api-level: [34]
-        target: [default, google_apis_playstore]
+        target: [google_apis_playstore]
     steps:
       - name: checkout
         uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: flutter pub get
 
       - name: Enable KVM
         run: |
@@ -31,14 +36,7 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Pixel 7
-          script: ./gradlew connectedCheck
-
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-
-      - run: flutter pub get
-      - run: flutter test integration_test
+          script: flutter test integration_test
 # You can use flavors to run test, e.g. flutter test integration_test --dart-define=envFlavor=dev --flavor dev
 # Alternatively, if you're using a custom script to run tests, you can use:
 # - run: ./path/to/your/script.sh
