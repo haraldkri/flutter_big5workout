@@ -8,7 +8,6 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return firebase_ui.ProfileScreen(
-      providers: [],
       actions: [
         firebase_ui.SignedOutAction((context) {
           context.pushReplacementNamed('sign-in');

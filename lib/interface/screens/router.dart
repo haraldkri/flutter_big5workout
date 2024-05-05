@@ -58,7 +58,7 @@ final router = GoRouter(
                     const snackBar = SnackBar(content: Text('Please check your email to verify your email address'));
                     ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   }
-                  context.pushReplacement('/training');
+                  context.goNamed('training');
                 })),
               ],
             );
