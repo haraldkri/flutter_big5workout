@@ -19,7 +19,7 @@ Future<void> main() async {
     GoogleProvider(clientId: getGoogleClientId())
   ]);
 
-  runApp(ChangeNotifierProvider(
+  runApp(ChangeNotifierProvider<ApplicationState>(
     create: (context) => ApplicationState(),
     builder: ((context, child) => App()),
   ));
