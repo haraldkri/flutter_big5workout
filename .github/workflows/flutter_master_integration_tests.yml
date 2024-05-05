@@ -31,6 +31,7 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Pixel 7
+          script: ./gradlew connectedCheck
 
       - uses: subosito/flutter-action@v2
         with:
