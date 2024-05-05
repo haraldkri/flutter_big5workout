@@ -7,6 +7,9 @@ import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'interface/app.dart';
 import 'interface/app_state.dart';
+import 'interface/data/google-services.dart';
+
+String getGoogleClientId() => googleServicesConfig["client"][0]["oauth_client"][0]["client_id"];
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +19,7 @@ Future<void> main() async {
     GoogleProvider(clientId: getGoogleClientId())
   ]);
 
-  runApp(ChangeNotifierProvider(
+  runApp(ChangeNotifierProvider<ApplicationState>(
     create: (context) => ApplicationState(),
     builder: ((context, child) => App()),
   ));

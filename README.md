@@ -1,3 +1,9 @@
+[//]: # create a badge displaying important information about the project
+<a href=”https://github.com/haraldkri/flutter_big5workout/actions">
+<img src=”https://github.com/haraldkri/flutter_big5workout/workflows/integration-test-my-app/badge.svg" alt=”Build
+Status”>
+</a>
+
 # flutter_big5workout
 
 An app for tracking your workout according to the principles of Body by Science.
