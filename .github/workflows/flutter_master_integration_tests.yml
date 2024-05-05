@@ -5,7 +5,8 @@ name: integration-test-my-app
 on:
   push:
     branches:
-      - pipeline-debugging
+      - develop
+      - master
 
 jobs:
   test:
