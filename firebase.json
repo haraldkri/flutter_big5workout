@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "big5workout-app",
+          "appId": "1:939860880523:android:46f4c07734c3a8aee4f88e",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "big5workout-app",
+          "configurations": {
+            "android": "1:939860880523:android:46f4c07734c3a8aee4f88e",
+            "ios": "1:939860880523:ios:0b1682642668d9b0e4f88e"
+          }
+        }
+      }
+    }
+  }
+}
