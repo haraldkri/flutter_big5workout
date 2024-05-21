@@ -1,0 +1,918 @@
+{
+  "muscles": [
+    "latissimus",
+    "biceps",
+    "brachialis",
+    "brachioradialis",
+    "teres major",
+    "lower back",
+    "quadriceps",
+    "hamstrings",
+    "glutes",
+    "calves",
+    "triceps",
+    "deltoids",
+    "pectorals",
+    "core",
+    "rhomboids",
+    "trapezius"
+  ],
+  "exercises": [
+    {
+      "key": "pull-down",
+      "name": {
+        "de": "Latzug",
+        "en": "Pull Down"
+      },
+      "variations": [
+        {
+          "key": "classic",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps"
+          ],
+          "description": {
+            "de": "Die klassische Variante des Latzugs trainiert hauptsächlich den Latissimus und unterstützt die Bizepsmuskulatur.",
+            "en": "The classic variation of the pull-down primarily targets the latissimus and supports the biceps."
+          }
+        },
+        {
+          "key": "underhand grip",
+          "primary_muscles": [
+            "latissimus",
+            "biceps"
+          ],
+          "supporting_muscles": [
+            "brachialis",
+            "brachioradialis"
+          ],
+          "description": {
+            "de": "Der Untergriff betont den Bizeps stärker und trainiert auch den Brachialis und Brachioradialis.",
+            "en": "The underhand grip emphasizes the biceps more and also works the brachialis and brachioradialis."
+          }
+        },
+        {
+          "key": "wide grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps"
+          ],
+          "description": {
+            "de": "Der breite Griff erhöht die Belastung auf den Latissimus und vermindert den Bizepseinsatz.",
+            "en": "The wide grip increases the load on the latissimus and reduces biceps involvement."
+          }
+        },
+        {
+          "key": "close grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "teres major"
+          ],
+          "description": {
+            "de": "Der enge Griff betont die untere Latissimus-Region und unterstützt den Teres major.",
+            "en": "The close grip emphasizes the lower latissimus region and supports the teres major."
+          }
+        }
+      ],
+      "possible_styles": [
+        "machine",
+        "bar"
+      ]
+    },
+    {
+      "key": "biceps-curls",
+      "name": {
+        "de": "Bizepscurls",
+        "en": "Biceps Curls"
+      },
+      "variations": [
+        {
+          "key": "classic",
+          "primary_muscles": [
+            "biceps"
+          ],
+          "supporting_muscles": [
+            "brachialis",
+            "brachioradialis"
+          ],
+          "description": {
+            "de": "Die klassische Variante trainiert die Bizeps effektiv und unterstützt den Brachialis und Brachioradialis.",
+            "en": "The classic variation effectively trains the biceps and supports the brachialis and brachioradialis."
+          }
+        },
+        {
+          "key": "hammer",
+          "primary_muscles": [
+            "biceps",
+            "brachioradialis"
+          ],
+          "supporting_muscles": [
+            "brachialis"
+          ],
+          "description": {
+            "de": "Der Hammergriff verlagert den Fokus auf den Brachioradialis und den Brachialis.",
+            "en": "The hammer grip shifts the focus to the brachioradialis and brachialis."
+          }
+        },
+        {
+          "key": "concentration",
+          "primary_muscles": [
+            "biceps"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Die Konzentrationscurls isolieren den Bizeps für eine intensivere Belastung.",
+            "en": "The concentration curls isolate the biceps for a more intense load."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell",
+        "machine"
+      ]
+    },
+    {
+      "key": "lower-back",
+      "name": {
+        "de": "Unterer Rücken",
+        "en": "Lower Back"
+      },
+      "variations": [
+        {
+          "key": "hyperextensions",
+          "primary_muscles": [
+            "lower back"
+          ],
+          "supporting_muscles": [
+            "glutes",
+            "hamstrings"
+          ],
+          "description": {
+            "de": "Hyperextensions stärken den unteren Rücken und trainieren auch die Gesäß- und Beinbeugemuskulatur.",
+            "en": "Hyperextensions strengthen the lower back and also train the glutes and hamstrings."
+          }
+        },
+        {
+          "key": "good mornings",
+          "primary_muscles": [
+            "lower back"
+          ],
+          "supporting_muscles": [
+            "hamstrings",
+            "glutes"
+          ],
+          "description": {
+            "de": "Good Mornings konzentrieren sich auf den unteren Rücken und stärken die hintere Oberschenkel- und Gesäßmuskulatur.",
+            "en": "Good Mornings focus on the lower back and strengthen the hamstrings and glutes."
+          }
+        }
+      ],
+      "possible_styles": [
+        "bodyweight",
+        "barbell"
+      ]
+    },
+    {
+      "key": "leg-press",
+      "name": {
+        "de": "Beinpresse",
+        "en": "Leg Press"
+      },
+      "variations": [
+        {
+          "key": "classic",
+          "primary_muscles": [
+            "quadriceps"
+          ],
+          "supporting_muscles": [
+            "glutes",
+            "hamstrings",
+            "calves"
+          ],
+          "description": {
+            "de": "Die klassische Beinpresse trainiert hauptsächlich die Quadrizeps und unterstützt Gesäß, Oberschenkelrückseite und Waden.",
+            "en": "The classic leg press primarily targets the quadriceps and supports the glutes, hamstrings, and calves."
+          }
+        },
+        {
+          "key": "narrow stance",
+          "primary_muscles": [
+            "quadriceps"
+          ],
+          "supporting_muscles": [
+            "glutes",
+            "hamstrings"
+          ],
+          "description": {
+            "de": "Ein enger Stand erhöht den Fokus auf die Quadrizeps.",
+            "en": "A narrow stance increases the focus on the quadriceps."
+          }
+        },
+        {
+          "key": "wide stance",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "hamstrings"
+          ],
+          "description": {
+            "de": "Ein weiter Stand betont zusätzlich die Gesäßmuskulatur und die Oberschenkelrückseite.",
+            "en": "A wide stance additionally emphasizes the glutes and hamstrings."
+          }
+        }
+      ],
+      "possible_styles": [
+        "machine"
+      ]
+    },
+    {
+      "key": "seated-row",
+      "name": {
+        "de": "Rudern im Sitzen",
+        "en": "Seated Row"
+      },
+      "variations": [
+        {
+          "key": "classic",
+          "primary_muscles": [
+            "latissimus",
+            "teres major"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "rhomboids"
+          ],
+          "description": {
+            "de": "Die klassische Sitzruder-Variante trainiert hauptsächlich den Latissimus und den Teres major, unterstützt durch Bizeps und Rautenmuskel.",
+            "en": "The classic seated row variation primarily targets the latissimus and teres major, supported by the biceps and rhomboids."
+          }
+        },
+        {
+          "key": "close grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "teres major",
+            "rhomboids"
+          ],
+          "description": {
+            "de": "Der enge Griff betont die mittlere und untere Rückenpartie.",
+            "en": "The close grip emphasizes the middle and lower back areas."
+          }
+        },
+        {
+          "key": "wide grip",
+          "primary_muscles": [
+            "latissimus",
+            "teres major"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "rhomboids"
+          ],
+          "description": {
+            "de": "Der weite Griff erhöht die Belastung auf den oberen Rücken und die Schultern.",
+            "en": "The wide grip increases the load on the upper back and shoulders."
+          }
+        }
+      ],
+      "possible_styles": [
+        "machine",
+        "cable"
+      ]
+    },
+    {
+      "key": "shrugs",
+      "name": {
+        "de": "Schulterzucken",
+        "en": "Shrugs"
+      },
+      "variations": [
+        {
+          "key": "dumbbell",
+          "primary_muscles": [
+            "trapezius"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Schulterzucken mit Kurzhanteln betont die obere Trapezmuskulatur.",
+            "en": "Dumbbell shrugs emphasize the upper trapezius muscles."
+          }
+        },
+        {
+          "key": "barbell",
+          "primary_muscles": [
+            "trapezius"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Schulterzucken mit der Langhantel fokussiert sich auf die Trapezmuskulatur.",
+            "en": "Barbell shrugs focus on the trapezius muscles."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell"
+      ]
+    },
+    {
+      "key": "overhead-press",
+      "name": {
+        "de": "Überkopfdrücken",
+        "en": "Overhead Press"
+      },
+      "variations": [
+        {
+          "key": "seated",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [
+            "triceps"
+          ],
+          "description": {
+            "de": "Das sitzende Überkopfdrücken stabilisiert den Rumpf und trainiert die Schultern und Trizeps.",
+            "en": "The seated overhead press stabilizes the core and works the shoulders and triceps."
+          }
+        },
+        {
+          "key": "standing",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "core"
+          ],
+          "description": {
+            "de": "Das stehende Überkopfdrücken fordert den Rumpf mehr und trainiert Schultern und Trizeps.",
+            "en": "The standing overhead press engages the core more and works the shoulders and triceps."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell",
+        "machine"
+      ]
+    },
+    {
+      "key": "lateral-raise",
+      "name": {
+        "de": "Seitheben",
+        "en": "Lateral Raise"
+      },
+      "variations": [
+        {
+          "key": "classic",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Das klassische Seitheben fokussiert sich auf die seitlichen Schultermuskeln.",
+            "en": "The classic lateral raise focuses on the lateral shoulder muscles."
+          }
+        },
+        {
+          "key": "bent-over",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [
+            "trapezius"
+          ],
+          "description": {
+            "de": "Das vorgebeugte Seitheben trainiert die hinteren Schultermuskeln und den Trapezmuskel.",
+            "en": "The bent-over lateral raise targets the rear shoulder muscles and trapezius."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "cable"
+      ]
+    },
+    {
+      "key": "triceps-press",
+      "name": {
+        "de": "Trizepsdrücken",
+        "en": "Triceps Press"
+      },
+      "variations": [
+        {
+          "key": "skullcrusher",
+          "primary_muscles": [
+            "triceps"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Skullcrusher sind eine isolierte Übung für den Trizeps.",
+            "en": "Skullcrusher is an isolated exercise for the triceps."
+          }
+        },
+        {
+          "key": "overhead",
+          "primary_muscles": [
+            "triceps"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Überkopf-Trizepsdrücken zielt auf den gesamten Trizeps ab.",
+            "en": "Overhead triceps press targets the entire triceps."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell",
+        "cable",
+        "machine"
+      ]
+    },
+    {
+      "key": "calf-raise",
+      "name": {
+        "de": "Wadenheben",
+        "en": "Calf Raise"
+      },
+      "variations": [
+        {
+          "key": "standing",
+          "primary_muscles": [
+            "calves"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Das stehende Wadenheben trainiert die Wadenmuskulatur im Stehen.",
+            "en": "Standing calf raises work the calves in a standing position."
+          }
+        },
+        {
+          "key": "seated",
+          "primary_muscles": [
+            "calves"
+          ],
+          "supporting_muscles": [],
+          "description": {
+            "de": "Das sitzende Wadenheben trainiert die Waden im Sitzen.",
+            "en": "Seated calf raises work the calves in a seated position."
+          }
+        }
+      ],
+      "possible_styles": [
+        "bodyweight",
+        "machine",
+        "barbell",
+        "dumbbell"
+      ]
+    },
+    {
+      "key": "shoulder-press",
+      "name": {
+        "de": "Schulterdrücken",
+        "en": "Shoulder Press"
+      },
+      "variations": [
+        {
+          "key": "seated",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [
+            "triceps"
+          ],
+          "description": {
+            "de": "Das sitzende Schulterdrücken stabilisiert den Rumpf und trainiert Schultern und Trizeps.",
+            "en": "The seated shoulder press stabilizes the core and works the shoulders and triceps."
+          }
+        },
+        {
+          "key": "standing",
+          "primary_muscles": [
+            "deltoids"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "core"
+          ],
+          "description": {
+            "de": "Das stehende Schulterdrücken fordert den Rumpf mehr und trainiert Schultern und Trizeps.",
+            "en": "The standing shoulder press engages the core more and works the shoulders and triceps."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell",
+        "machine"
+      ]
+    },
+    {
+      "key": "chest-press",
+      "name": {
+        "de": "Brustdrücken",
+        "en": "Chest Press"
+      },
+      "variations": [
+        {
+          "key": "flat",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das flache Brustdrücken zielt auf die gesamte Brustmuskulatur und unterstützt die Trizeps und Schultern.",
+            "en": "The flat chest press targets the entire pectoral muscles and supports the triceps and shoulders."
+          }
+        },
+        {
+          "key": "incline",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das Schrägbankdrücken betont die obere Brust und unterstützt Trizeps und Schultern.",
+            "en": "The incline chest press emphasizes the upper chest and supports the triceps and shoulders."
+          }
+        },
+        {
+          "key": "decline",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das Negativdrücken betont die untere Brust und unterstützt Trizeps und Schultern.",
+            "en": "The decline chest press emphasizes the lower chest and supports the triceps and shoulders."
+          }
+        }
+      ],
+      "possible_styles": [
+        "dumbbell",
+        "barbell",
+        "machine"
+      ]
+    },
+    {
+      "key": "deadlift",
+      "name": {
+        "de": "Kreuzheben",
+        "en": "Deadlift"
+      },
+      "variations": [
+        {
+          "key": "conventional",
+          "primary_muscles": [
+            "lower back",
+            "glutes",
+            "hamstrings",
+            "quadriceps",
+            "core"
+          ],
+          "supporting_muscles": [
+            "forearms"
+          ],
+          "description": {
+            "de": "Das konventionelle Kreuzheben ist eine Ganzkörperübung, die den unteren Rücken, die Gesäßmuskulatur, die Oberschenkelrückseite und die Quadrizeps trainiert.",
+            "en": "The conventional deadlift is a full-body exercise that targets the lower back, glutes, hamstrings, and quadriceps."
+          }
+        },
+        {
+          "key": "sumo",
+          "primary_muscles": [
+            "lower back",
+            "glutes",
+            "hamstrings",
+            "quadriceps",
+            "core"
+          ],
+          "supporting_muscles": [
+            "forearms"
+          ],
+          "description": {
+            "de": "Das Sumo-Kreuzheben zeichnet sich durch eine breitere Beinstellung aus und legt mehr Fokus auf die Quadrizeps und den unteren Rücken.",
+            "en": "The sumo deadlift is characterized by a wider stance and places more emphasis on the quadriceps and lower back."
+          }
+        },
+        {
+          "key": "romanian",
+          "primary_muscles": [
+            "lower back",
+            "glutes",
+            "hamstrings"
+          ],
+          "supporting_muscles": [
+            "forearms"
+          ],
+          "description": {
+            "de": "Das rumänische Kreuzheben konzentriert sich stärker auf die Oberschenkelrückseite und die Gesäßmuskulatur durch eine geringere Kniebeugung.",
+            "en": "The Romanian deadlift focuses more on the hamstrings and glutes with less knee bend."
+          }
+        }
+      ],
+      "possible_styles": [
+        "barbell",
+        "dumbbell"
+      ]
+    },
+    {
+      "key": "squats",
+      "name": {
+        "de": "Kniebeugen",
+        "en": "Squats"
+      },
+      "variations": [
+        {
+          "key": "back-squat",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes",
+            "hamstrings"
+          ],
+          "supporting_muscles": [
+            "lower back",
+            "core"
+          ],
+          "description": {
+            "de": "Die Kniebeuge mit der Hantel auf dem Rücken trainiert primär die Oberschenkelvorderseite, Gesäßmuskulatur und Oberschenkelrückseite.",
+            "en": "The back squat with the barbell on the back primarily targets the quadriceps, glutes, and hamstrings."
+          }
+        },
+        {
+          "key": "front-squat",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "core"
+          ],
+          "description": {
+            "de": "Die Kniebeuge mit der Hantel auf der Vorderseite betont die Oberschenkelvorderseite und den Rumpf.",
+            "en": "The front squat with the barbell on the front emphasizes the quadriceps and core."
+          }
+        },
+        {
+          "key": "goblet-squat",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "core"
+          ],
+          "description": {
+            "de": "Die Goblet-Kniebeuge mit einer Hantel oder Kettlebell vor der Brust trainiert die Oberschenkelvorderseite und den Rumpf.",
+            "en": "The goblet squat with a dumbbell or kettlebell in front of the chest targets the quadriceps and core."
+          }
+        }
+      ],
+      "possible_styles": [
+        "barbell",
+        "dumbbell",
+        "kettlebell"
+      ]
+    },
+    {
+      "key": "bench-press",
+      "name": {
+        "de": "Bankdrücken",
+        "en": "Bench Press"
+      },
+      "variations": [
+        {
+          "key": "flat",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das flache Bankdrücken trainiert hauptsächlich die Brustmuskulatur.",
+            "en": "The flat bench press primarily targets the pectorals."
+          }
+        },
+        {
+          "key": "incline",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das Schrägbankdrücken legt mehr Fokus auf die obere Brustmuskulatur.",
+            "en": "The incline bench press places more emphasis on the upper pectorals."
+          }
+        },
+        {
+          "key": "decline",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Das negative Bankdrücken legt mehr Fokus auf die untere Brustmuskulatur.",
+            "en": "The decline bench press places more emphasis on the lower pectorals."
+          }
+        }
+      ],
+      "possible_styles": [
+        "barbell",
+        "dumbbell",
+        "machine"
+      ]
+    },
+    {
+      "key": "pull-up",
+      "name": {
+        "de": "Klimmzug",
+        "en": "Pull-Up"
+      },
+      "variations": [
+        {
+          "key": "wide-grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "teres major",
+            "brachialis",
+            "brachioradialis"
+          ],
+          "description": {
+            "de": "Der breite Klimmzug trainiert hauptsächlich den Latissimus.",
+            "en": "The wide-grip pull-up primarily targets the latissimus."
+          }
+        },
+        {
+          "key": "close-grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "teres major",
+            "brachialis",
+            "brachioradialis"
+          ],
+          "description": {
+            "de": "Der enge Klimmzug trainiert den Latissimus mit mehr Betonung auf die Arme.",
+            "en": "The close-grip pull-up targets the latissimus with more emphasis on the arms."
+          }
+        },
+        {
+          "key": "neutral-grip",
+          "primary_muscles": [
+            "latissimus"
+          ],
+          "supporting_muscles": [
+            "biceps",
+            "teres major",
+            "brachialis",
+            "brachioradialis"
+          ],
+          "description": {
+            "de": "Der neutrale Griff beim Klimmzug ist gelenkschonender und trainiert den Latissimus.",
+            "en": "The neutral-grip pull-up is easier on the joints and targets the latissimus."
+          }
+        }
+      ],
+      "possible_styles": [
+        "bodyweight",
+        "assisted"
+      ]
+    },
+    {
+      "key": "dips",
+      "name": {
+        "de": "Dips",
+        "en": "Dips"
+      },
+      "variations": [
+        {
+          "key": "chest-dips",
+          "primary_muscles": [
+            "pectorals"
+          ],
+          "supporting_muscles": [
+            "triceps",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Brustdips legen mehr Fokus auf die Brustmuskulatur.",
+            "en": "Chest dips place more emphasis on the pectorals."
+          }
+        },
+        {
+          "key": "triceps-dips",
+          "primary_muscles": [
+            "triceps"
+          ],
+          "supporting_muscles": [
+            "pectorals",
+            "deltoids"
+          ],
+          "description": {
+            "de": "Trizepsdips legen mehr Fokus auf die Trizeps.",
+            "en": "Triceps dips place more emphasis on the triceps."
+          }
+        }
+      ],
+      "possible_styles": [
+        "bodyweight",
+        "assisted"
+      ]
+    },
+    {
+      "key": "lunge",
+      "name": {
+        "de": "Ausfallschritt",
+        "en": "Lunge"
+      },
+      "variations": [
+        {
+          "key": "forward-lunge",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "hamstrings",
+            "core"
+          ],
+          "description": {
+            "de": "Der Ausfallschritt nach vorne trainiert primär die Quadrizeps und Gesäßmuskulatur.",
+            "en": "The forward lunge primarily targets the quadriceps and glutes."
+          }
+        },
+        {
+          "key": "reverse-lunge",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "hamstrings",
+            "core"
+          ],
+          "description": {
+            "de": "Der Ausfallschritt nach hinten entlastet die Knie und trainiert die Quadrizeps und Gesäßmuskulatur.",
+            "en": "The reverse lunge is easier on the knees and targets the quadriceps and glutes."
+          }
+        },
+        {
+          "key": "walking-lunge",
+          "primary_muscles": [
+            "quadriceps",
+            "glutes"
+          ],
+          "supporting_muscles": [
+            "hamstrings",
+            "core"
+          ],
+          "description": {
+            "de": "Der gehende Ausfallschritt trainiert die Beinmuskulatur und den Rumpf.",
+            "en": "The walking lunge targets the leg muscles and core."
+          }
+        }
+      ],
+      "possible_styles": [
+        "bodyweight",
+        "dumbbell",
+        "barbell"
+      ]
+    }
+  ]
+}
