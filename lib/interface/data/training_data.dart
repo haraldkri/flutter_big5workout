@@ -1,3 +1,8 @@
+/*
+* Generated with help of ChatGPT4o
+* https://chatgpt.com/share/f18fddb4-0c7e-4d67-a518-140e1b19f250
+* */
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -51,6 +56,7 @@ class Exercise {
   }
 }
 
+
 class TrainingData {
   final List<Muscle> muscles;
   final List<Exercise> exercises;
@@ -93,3 +99,4 @@ void main() {
     print('\n');
   }
 }
+
