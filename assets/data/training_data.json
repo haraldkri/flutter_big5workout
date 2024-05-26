@@ -914,5 +914,41 @@
         "barbell"
       ]
     }
-  ]
+  ],
+  "workouts": [
+    {
+      "key": "big-5",
+      "description": {
+        "de": "Das Big-5 Workout konzentriert sich auf die fünf grundlegenden Übungen, die die Hauptmuskelgruppen des Körpers ansprechen.",
+        "en": "The Big-5 workout focuses on the five fundamental exercises targeting the major muscle groups of the body."
+      },
+      "exercises": [
+        {
+          "key": "pull-down",
+          "variation": "classic",
+          "style": "machine"
+        },
+        {
+          "key": "chest-press",
+          "variation": "flat",
+          "style": "machine"
+        },
+        {
+          "key": "shoulder-press",
+          "variation": "seated",
+          "style": "machine"
+        },
+        {
+          "key": "seated-row",
+          "variation": "classic",
+          "style": "machine"
+        },
+        {
+          "key": "leg press",
+          "variation": "classic",
+          "style": "machine"
+        }
+      ]
+    }
+  ],
 }
