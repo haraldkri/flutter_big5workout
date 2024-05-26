@@ -951,4 +951,114 @@
       ]
     }
   ],
+  "records": {
+    "workouts": [
+      {
+        "id": "1234567890",
+        "key": "big-5",
+        "total_duration": 0,
+        "start_timestamp": 1716733864,
+        "end_timestamp": 1716733864,
+        "exercise_record_ids": [
+          {
+            "id": "pull-down-record-0",
+            "order_index": 0,
+            "start_timestamp": 1716733864,
+            "end_timestamp": 1716733864
+          },
+          {
+            "id": "chest-press-record-0",
+            "order_index": 3,
+            "start_timestamp": 1716733864,
+            "end_timestamp": 1716733864
+          },
+          {
+            "id": "shoulder-press-record-0",
+            "order_index": 2,
+            "start_timestamp": 1716733864,
+            "end_timestamp": 1716733864
+          },
+          {
+            "id": "seated-row-record-0",
+            "order_index": 1,
+            "start_timestamp": 1716733864,
+            "end_timestamp": 1716733864
+          },
+          {
+            "id": "leg-press-record-0",
+            "order_index": 4,
+            "start_timestamp": 1716733864,
+            "end_timestamp": 1716733864
+          }
+        ],
+        "exercises": [
+          {
+            "id": "pull-down-record-0",
+            "key": "pull-down",
+            "variation": "classic",
+            "style": "machine",
+            "duration": 0,
+            "weight": 0,
+            "movement_times": {
+              "eccentric_time": 0,
+              "concentric_time": 0,
+              "isometric_time": 0
+            }
+          },
+          {
+            "id": "chest-press-record-0",
+            "key": "pull-down",
+            "variation": "classic",
+            "style": "machine",
+            "duration": 0,
+            "weight": 0,
+            "movement_times": {
+              "eccentric_time": 0,
+              "concentric_time": 0,
+              "isometric_time": 0
+            }
+          },
+          {
+            "id": "shoulder-press-record-0",
+            "key": "pull-down",
+            "variation": "classic",
+            "style": "machine",
+            "duration": 0,
+            "weight": 0,
+            "movement_times": {
+              "eccentric_time": 0,
+              "concentric_time": 0,
+              "isometric_time": 0
+            }
+          },
+          {
+            "id": "seated-row-record-0",
+            "key": "pull-down",
+            "variation": "classic",
+            "style": "machine",
+            "duration": 0,
+            "weight": 0,
+            "movement_times": {
+              "eccentric_time": 0,
+              "concentric_time": 0,
+              "isometric_time": 0
+            }
+          },
+          {
+            "id": "leg-press-record-0",
+            "key": "pull-down",
+            "variation": "classic",
+            "style": "machine",
+            "duration": 0,
+            "weight": 0,
+            "movement_times": {
+              "eccentric_time": 0,
+              "concentric_time": 0,
+              "isometric_time": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
