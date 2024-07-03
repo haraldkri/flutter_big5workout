@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String assetsImagesLogo = 'assets/images/logo.svg';
+  static const String dataTrainingConfig = 'assets/data/training_config.json';
   static const String dataTrainingData = 'assets/data/training_data.json';
   static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
   static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
@@ -10,5 +11,4 @@ class Assets {
   static const String imagesLoginBackground = 'assets/images/login_background.jpg';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesSplashScreen = 'assets/images/splash_screen.png';
-
 }

@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider, PhoneAuthProvider;
 import 'package:flutter/material.dart';
+
+import 'data/training_config.dart';
 
 class ApplicationState extends ChangeNotifier {
   ApplicationState() {
@@ -7,6 +11,8 @@ class ApplicationState extends ChangeNotifier {
   }
 
   bool _loggedIn = false;
+
+  TrainingData trainingData = TrainingData.fromAssets();
 
   bool get loggedIn => _loggedIn;
 

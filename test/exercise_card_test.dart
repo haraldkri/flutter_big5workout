@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_big5workout/interface/widgets/exercise_card.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -7,10 +8,10 @@ void main() {
 
   setUpAll(() {
     selected = false;
-    defaultWidget = const ExerciseCard(
+    defaultWidget = ExerciseCard(
       title: "Pull Down",
       exerciseType: "Machine",
-      muscleGroups: ["Latissimus", "Biceps"],
+      muscleGroups: const ["Latissimus", "Biceps"],
       previewImage: "assets/images/logo.svg",
       infoText:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
@@ -18,7 +19,7 @@ void main() {
       showInfoAction: true,
       selected: selected,
       onTap: () {
-        selected = true;
+        selected = !selected;
       },
     );
   });
@@ -29,6 +30,7 @@ void main() {
 
     expect(find.byKey(const Key('exercise-card-default')), findsOneWidget);
     expect(find.text('Pull Down'), findsOneWidget);
+    expect(find.text('Machine'), findsOneWidget);
     expect(find.text('Latissimus'), findsOneWidget);
     expect(find.text('Biceps'), findsOneWidget);
     expect(find.byKey(const Key('image-exercise-preview')), findsOneWidget);

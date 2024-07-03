@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_big5workout/interface/widgets/widgets.dart';
+import 'package:flutter_big5workout/interface/widgets/styled_button.dart';
 import 'package:go_router/go_router.dart';
 
 class AuthFunc extends StatelessWidget {

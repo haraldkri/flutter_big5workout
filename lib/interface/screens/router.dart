@@ -93,9 +93,9 @@ GoRouter getRouter(bool isUserLoggedIn) => GoRouter(
                       name: "training",
                       redirect: (context, state) {
                         // TODO implement workoutIds fetch
-                        final workoutIds = ["default workout"];
+                        final workoutIds = ["default_workout"];
 
-                        if (workoutIds.length == 1) return "training/${workoutIds.first}";
+                        if (workoutIds.length == 1) return "/training/${workoutIds.first}";
                         return null;
                       },
                       pageBuilder: (context, state) {
@@ -103,21 +103,21 @@ GoRouter getRouter(bool isUserLoggedIn) => GoRouter(
                       },
                       routes: [
                         GoRoute(
-                          path: "/:workoutId",
+                          path: ":workoutId",
                           name: "training-workout",
                           pageBuilder: (context, state) {
                             /// In this route all exercises of the workout are displayed.
                             /// The purpose of this route is to make the user select an exercise and start the training.
-                            return const NoTransitionPage(child: WorkoutStartScreen());
+                            return NoTransitionPage(child: WorkoutStartScreen(workoutId: state.pathParameters["workoutId"]!));
                           },
                           routes: [
                             GoRoute(
-                                path: "/:exerciseId",
+                                path: ":exerciseId",
                                 name: "training-exercise",
                                 redirect: (context, state) => "${state.fullPath}/start",
                                 routes: [
                                   GoRoute(
-                                    path: "/start",
+                                    path: "start",
                                     name: "training-exercise-overview",
                                     pageBuilder: (context, state) {
                                       /// In this route information to do the exercise is provided, e.g. Exercise name,
@@ -127,7 +127,7 @@ GoRouter getRouter(bool isUserLoggedIn) => GoRouter(
                                     },
                                   ),
                                   GoRoute(
-                                    path: "/timer",
+                                    path: "timer",
                                     name: "training-exercise-timer",
                                     pageBuilder: (context, state) {
                                       /// This route is displayed when the user started the exercise.
@@ -137,7 +137,7 @@ GoRouter getRouter(bool isUserLoggedIn) => GoRouter(
                                     },
                                   ),
                                   GoRoute(
-                                    path: "/result",
+                                    path: "result",
                                     name: "training-exercise-result",
                                     pageBuilder: (context, state) {
                                       /// In this route the result of the exercise is displayed as well as a list of all remaining
